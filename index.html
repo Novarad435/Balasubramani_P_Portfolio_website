@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Balasubramani P — ECE & Programmer</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description"
+        content="Bala — Electronics & Communication student, PCB designer, and programmer. Portfolio." />
+</head>
+
+<body>
+    <!-- NAV -->
+    <header class="nav-wrap">
+        <nav class="nav container">
+            <div class="brand">
+                <div class="logo">B</div>
+                <div class="brand-text">
+                    <div class="name">Balasubramani P</div>
+                    <div class="role">ECE • Programmer</div>
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-scroll>Home</a></li>
+                <li><a href="#about" data-scroll>About</a></li>
+                <li><a href="#hardware" data-scroll>Hardware</a></li>
+                <li><a href="#software" data-scroll>Software</a></li>
+                <li><a href="#skills" data-scroll>Skills</a></li>
+                <li><a href="#contact" data-scroll>Contact</a></li>
+            </ul>
+            <a class="resume-btn"
+                href="https://drive.google.com/file/d/1dLdWozI2htW4D6B9X6B6XZwYx9VCblTn/view?usp=sharing"
+                download>Resume</a>
+            <button class="mobile-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+        <section id="home" class="hero container">
+            <div class="hero-left">
+                <p class="hello">Hi, I’m</p>
+                <h1 class="hero-title">Balasubramani</h1>
+                <h2 class="type-line"><span id="typed"></span><span class="cursor">|</span></h2>
+                <p class="hero-desc">I build end-to-end projects — from PCBs and embedded firmware to polished web
+                    applications.</p>
+                <div class="hero-ctas">
+                    <a href="#hardware" class="btn primary" data-scroll>See Hardware</a>
+                    <a href="#software" class="btn" data-scroll>See Software</a>
+                </div>
+
+                <div class="quick-info">
+                    <span>📍Coimbatore,Tamil Nadu, India</span>
+                    <span>•</span>
+                    <span>📧 balatiger40@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="profile-card">
+                    <img src="images/photo1.png" alt="Bala profile" id="profileImg" />
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section container reveal">
+            <h3>About Me</h3>
+            <div class="about-grid">
+                <div>
+                    <p>I’m an Electronics & Communication student and a strong programmer. I design PCBs using KiCad,
+                        write firmware for ESP32/Arduino, and build web apps. I enjoy projects that connect hardware to
+                        cloud services.</p>
+                    <ul class="facts">
+                        <li><strong>Degree:</strong> B.E. - Electronics & Communication (ongoing)</li>
+                        <li><strong>Interests:</strong> Software, CMOS gate simulation, PCB Design, Full-Stack</li>
+                        <li><strong>Tools:</strong> KiCad, VS Code, Git</li>
+                    </ul>
+                </div>
+                <div class="about-box">
+                    <h4>Short timeline</h4>
+                    <ol>
+                        <li>Built ESP32 IoT sensor with PCB</li>
+                        <li>Developed full-stack medical website</li>
+                        <li>Created AI voice assistant (Python)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- HARDWARE PROJECTS -->
+        <section id="hardware" class="section container reveal">
+            <h3>Hardware Projects</h3>
+            <div class="projects-grid">
+                <article class="project-card" data-img="images/temperatureAndHumititySensor.png"
+                    data-title="Automating Lighting and Alarm Systems"
+                    data-desc="arduino UNO-based IoT sensor with KiCad PCB and Wi-Fi data logging."
+                    data-tech="arduino UNO, Tinkercad, IoT"
+                    data-demo="https://www.tinkercad.com/things/7c0ssZM7kui-temperature-and-humitity-sensor?sharecode=tJzRIfHS2RvrSlixF9a5c3vlGqN0a6mykQdfYsSRH3k"
+                    data-code="https://drive.google.com/file/d/1vde0_lM1YCnKTPrPNtvgAQj-cEkX_aOc/view?usp=sharing">
+                    <div class="project-thumb">
+                        <img src="images/temperatureAndHumititySensor.png" alt="Temp sensor" />
+                    </div>
+                    <h4>Automating Lighting and Alarm Systems</h4>
+                    <p class="muted">arduino UNO, Tinkercad, IoT</p>
+                    <button class="btn small open-modal">Details</button>
+                </article>
+
+                <article class="project-card" data-img=""
+                    data-title="Temperature and humitity sensor module using ESP32"
+                    data-desc="arduino uno-based IoT sensor with KiCad PCB of ESB32 and Wi-Fi data logging."
+                    data-tech="arduino uno, Ki CAD, IoT, ESP32"
+                    data-demo="#"
+                    data-code="#">
+                    <div class="project-thumb">
+                        <img src="images/project-hw-2.jpg" alt="Safety footwear" />
+                    </div>
+                    <h4>Temperature and humitity sensor module using ESP32</h4>
+                    <p class="muted">arduino uno, Ki CAD, IoT, ESP32</p>
+                    <button class="btn small open-modal">Details</button>
+                </article>
+
+                <article class="project-card"
+                    data-img="images/Driver Drowsiness and Health Monitoring System with Automatic Vehicle Control and Emergency Alert using Rasperry pi and IOT.png"
+                    data-title="Driver Drowsiness and Hands-off Steering Safety System with Auto Roadside Stop"
+                    data-desc="ESP32 microcontroller, IR eye blink sensor, capacitive touch sensor, motor driver, servo motor, buzzer/horn relay."
+                    data-tech="ESP32, IR Eye Blink Sensor, IoT"
+                    data-demo="#"
+                    data-code="#">
+                    <div class="project-thumb">
+                        <img src="images/Driver Drowsiness and Health Monitoring System with Automatic Vehicle Control and Emergency Alert using Rasperry pi and IOT.png" alt="Temp sensor" />
+                    </div>
+                    <h4>Driver Drowsiness and Hands-off Steering Safety System with Auto Roadside Stop</h4>
+                    <p class="muted">ESP32, IR Eye Blink Sensor, IoT</p>
+                    <button class="btn small open-modal">Details</button>
+                </article>
+
+                <article class="project-card" data-img=""
+                    data-title="ESP32-S3 Based Real-Time Driver Drowsiness Detection using TinyML"
+                    data-desc="An ESP32-S3 based AI system that detects driver drowsiness in real time and triggers safety alerts to prevent accidents."
+                    data-tech="On-board Machine Learning (TinyML)"
+                    data-demo="#"
+                    data-code="#">
+                    <div class="project-thumb">
+                        <img src="images/project-hw-2.jpg" alt="Safety footwear" />
+                    </div>
+                    <h4>ESP32-S3 Based Real-Time Driver Drowsiness Detection using TinyML</h4>
+                    <p class="muted">On-board Machine Learning (TinyML)</p>
+                    <button class="btn small open-modal">Details</button>
+                </article>
+            </div>
+
+        </section>
+
+        <!-- SOFTWARE PROJECTS -->
+        <section id="software" class="section container reveal">
+            <h3>Software Projects</h3>
+            <div class="projects-grid">
+                <article class="project-card" data-img="images/medicalWebsite.png" data-title="Medical Website"
+                    data-desc="Full-stack site with booking system — React frontend, Node/Express backend."
+                    data-tech="React, Node, MongoDB"
+                    data-demo="https://drive.google.com/drive/folders/1tI6oi-rHuWjT2oftbBESteU8OeiGviZu?usp=sharing"
+                    data-code="https://github.com/Novarad435/Medical-Website--Medion-">
+                    <div class="project-thumb">
+                        <img src="images/medicalWebsite.png" alt="Medical site" />
+                    </div>
+                    <h4>Medical Website</h4>
+                    <p class="muted">React, Node.js</p>
+                    <button class="btn small open-modal">Details</button>
+                </article>
+
+                <article class="project-card" data-img="images/AIPython.png" data-title="AI Voice Assistant"
+                    data-desc="Desktop assistant using Python speech recognition and TTS." data-tech="Python, Speech"
+                    data-demo="https://github.com/Novarad435/AI-Personal-Assistant--Novard-"
+                    data-code="https://drive.google.com/file/d/1vde0_lM1YCnKTPrPNtvgAQj-cEkX_aOc/view?usp=sharing">
+                    <div class="project-thumb">
+                        <img src="images/AIPython.png" alt="Voice assistant" />
+                    </div>
+                    <h4>AI Voice Assistant</h4>
+                    <p class="muted">Python</p>
+                    <button class="btn small open-modal">Details</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section container reveal skills-container">
+            <h3>Skills</h3>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h4>Programming</h4>
+                    <div class="bar-wrap">
+                        <div class="bar" data-percent="90"><span class="skill-name">Python</span></div>
+                    </div>
+                    <div class="bar-wrap">
+                        <div class="bar" data-percent="85"><span class="skill-name">C / C++</span></div>
+                    </div>
+                    <div class="bar-wrap">
+                        <div class="bar" data-percent="80"><span class="skill-name">Java</span></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Frontend</h4>
+                    <div class="bar-wrap">
+                        <div class="bar" data-percent="85"><span class="skill-name">HTML/CSS/JS</span></div>
+                    </div>
+                    <div class="bar-wrap">
+                        <div class="bar" data-percent="75"><span class="skill-name">React (projects)</span></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Hardware</h4>
+                    <div class="bar-wrap">
+                        <div class="bar" data-percent="85"><span class="skill-name">KiCad / PCB</span></div>
+                    </div>
+                    <div class="bar-wrap">
+                        <div class="bar" data-percent="80"><span class="skill-name">ESP32 / Embedded C</span></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Tools</h4>
+                    <div class="bar-wrap">
+                        <div class="bar" data-percent="90"><span class="skill-name">Git</span></div>
+                    </div>
+                    <div class="bar-wrap">
+                        <div class="bar" data-percent="70"><span class="skill-name">MATLAB</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="section container reveal">
+            <h3>Contact</h3>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>Get in touch</h4>
+                    <p>Email: <a
+                            href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXDxrKGsZRGhrWfmdwQcZLkMhxtvNbqwzGxhdqFFccxvpKRMVgrCSNtRdKmZMsKVlJgSH">Bala
+                            mail</a></p>
+                    <p>Location:<a
+                            href="https://www.google.com/maps/place/Coimbatore,+Tamil+Nadu/@11.0141263,76.8848329,27542m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3ba859af2f971cb5:0x2fc1c81e183ed282!8m2!3d10.9973691!4d76.9588876!16zL20vMDE5ZmM0?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D">Coimbatore,
+                            Tamilnadu, India</a></p>
+                    <div class="socials">
+                        <a href="https://github.com/Novarad435" aria-label="GitHub">GitHub</a>
+                        <a href="https://www.linkedin.com/in/balasubramani-p-2640782a2/"
+                            aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+
+                <form action="https://formsubmit.co/balatiger40@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required
+                        style="width: 100%; padding: 8px; margin-bottom: 12px; border-radius: 6px; border: 1px solid #ccc;">
+                    <input type="email" name="email" placeholder="Your Email" required
+                        style="width: 100%; padding: 8px; margin-bottom: 12px; border-radius: 6px; border: 1px solid #ccc;">
+                    <textarea name="message" placeholder="Your Message" required
+                        style="width: 100%; padding: 8px; margin-bottom: 12px; border-radius: 6px; border: 1px solid #ccc; height: 120px;"></textarea>
+                    <button type="submit"
+                        style="background: linear-gradient(90deg, #00d084, #5cc6ff); color: #04121a; padding: 10px 16px; border: none; border-radius: 10px; font-weight: 700; cursor: pointer;">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <p>© <span id="year"></span> Balasubramani. Built with HTML • CSS • JS</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- MODAL TEMPLATE -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+            <div class="modal-left">
+                <img id="modalImg" src="" alt="" />
+            </div>
+            <div class="modal-right">
+                <h3 id="modalTitle"></h3>
+                <p id="modalTech" class="muted"></p>
+                <p id="modalDesc"></p>
+                <div class="modal-actions">
+                    <a id="modalDemo" href="#" class="btn">Live Demo</a>
+                    <a id="modalCode" href="#" class="btn">Source</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
